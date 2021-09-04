@@ -1,0 +1,24 @@
+html, body {
+    height:100%;
+    font-size: 25px;
+  }
+
+/* LINK COLORS */
+a:link {
+    color: #f0d264;
+}
+  
+/* visited link */
+a:visited {
+    color: #f0d264;
+}
+  
+/* mouse over link */
+a:hover {
+    color: hotpink;
+}
+  
+/* selected link */
+a:active {
+    color: #f0d264;
+}
