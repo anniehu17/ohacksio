@@ -50,20 +50,25 @@
 
         function addComment(comment) {
             var commentHtml = `
-                <div class="grid-container">
-                    <div class="comment">
-                        <i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
-                        <div class="top-comment">
-                            <p class="user">
-                                ${comment.author}
-                            </p>
-                            <p class="comment-ts">
-                                ${new Date(comment.date).toLocaleString()}
-                            </p>
+                <div class="comment">
+                    <div class="grid-container">
+                        <div class="item1">
+                            <i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
+                            <br>
+                            <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
                         </div>
-                        <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
-                        <div class="comment-content">
-                            ${comment.content}
+                        <div class="item2">
+                            <div class="top-comment">
+                                <p class="user">
+                                    ${comment.author}
+                                </p>
+                                <p class="comment-ts">
+                                    ${new Date(comment.date).toLocaleString()}
+                                </p>
+                            </div>
+                            <div class="comment-content">
+                                ${comment.content}
+                            </div>
                         </div>
                     </div>
                 </div>
