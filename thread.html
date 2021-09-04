@@ -4,6 +4,7 @@
   
 <head>
     <link rel="icon"> <!--ADD href to pic later-->
+    <script src="https://kit.fontawesome.com/37190c7dec.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="thread.css" />
 </head>
 
@@ -50,6 +51,7 @@
         function addComment(comment) {
             var commentHtml = `
                 <div class="comment">
+                    <i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
                     <div class="top-comment">
                         <p class="user">
                             ${comment.author}
@@ -58,6 +60,7 @@
                             ${new Date(comment.date).toLocaleString()}
                         </p>
                     </div>
+                    <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
                     <div class="comment-content">
                         ${comment.content}
                     </div>
