@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<title>Annie Hu</title>
+<html>
+  
+<head>
+    <link rel="icon">
+    <link rel="stylesheet" type="text/css" href="forum.css" />
+</head>
+
+<body>
+    <div class="top-bar">
+        <h1>
+            <a href="forum.html">
+                My Forum
+            </a>
+        </h1>
+    </div>
+    <div class="main">
+        <ol>
+        </ol>
+        <div class="header">
+        </div>
+        <textarea></textarea>
+        <form action="/action_page.php">
+            <input type="file" accept=".jpg,.png" id="myFile" name="filename">
+            <input type="submit">
+          </form>
+        <button id="add thread">add thread</button>
+        <div>
+        </div>
+    </div>
+    <script src="data.js"></script>
+    <script>
+        console.log(threads);
+        var container = document.querySelector('ol');
+
+        function addThread(thread) {
+            var threadHtml = `
+            <li class="row">
+                <a href="/thread.html?${thread.id}">
+                    <h4 class="title">
+                        ${thread.title}
+                    </h4>
+                    <p>
+                        ${thread.content}
+                    </p>
+                    <div class="bottom">
+                        <p class="timestamp">
+                            ${new Date(thread.date).toLocaleString()}
+                        </p>
+                        <p class="comment-count">
+                            ${thread.comments.length} comments
+                        </p>
+                    </div>
+                </a>
+            </li>
+            `
+            container.insertAdjacentHTML('beforeend', threadHtml);
+        }
+
+        for (let thread of threads) {
+            addThread(thread);
+        }
+
+        var btn = document.getElementById("add thread");
+        btn.addEventListener('click', function() {
+            var txt = document.querySelector('textarea');
+            var thread = {
+                id: threads.length + 1,
+                title: "Thread " + JSON.parse(threads.length + 1),
+                author: "Aaron",
+                date: Date.now(),
+                content: txt.value,
+                comments: [
+                ],
+                img:document.querySelector('form')
+            }
+            addThread(thread);
+            txt.value = '';
+            threads.push(thread);
+            localStorage.setItem('threads', JSON.stringify(threads));
+        })
+    </script>
+
+</body>
+
+</html>
