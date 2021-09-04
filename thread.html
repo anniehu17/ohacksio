@@ -11,7 +11,7 @@
 <body>
     <div class="top-bar">
         <h1>
-            <a href="forum.html">
+            <a href="/ohacksio/forum.html">
                 My Forum
             </a>
         </h1>
@@ -50,19 +50,21 @@
 
         function addComment(comment) {
             var commentHtml = `
-                <div class="comment">
-                    <i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
-                    <div class="top-comment">
-                        <p class="user">
-                            ${comment.author}
-                        </p>
-                        <p class="comment-ts">
-                            ${new Date(comment.date).toLocaleString()}
-                        </p>
-                    </div>
-                    <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
-                    <div class="comment-content">
-                        ${comment.content}
+                <div class="grid-container">
+                    <div class="comment">
+                        <i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
+                        <div class="top-comment">
+                            <p class="user">
+                                ${comment.author}
+                            </p>
+                            <p class="comment-ts">
+                                ${new Date(comment.date).toLocaleString()}
+                            </p>
+                        </div>
+                        <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+                        <div class="comment-content">
+                            ${comment.content}
+                        </div>
                     </div>
                 </div>
             `

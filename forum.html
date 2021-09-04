@@ -11,7 +11,7 @@
 <body>
     <div class="top-bar">
         <h1>
-            <a href="forum.html">
+            <a href="/ohacksio/forum.html">
                 My Forum
             </a>
         </h1>
@@ -21,7 +21,12 @@
         </ol>
         <div class="header">
         </div>
-        <textarea></textarea>
+        <p>_________________________</p>
+        <p>Thread Title</p>
+        <textarea id="titleval"></textarea>
+        <br>
+        <p>Content</p>
+        <textarea id="contentval"></textarea>
         <form action="/action_page.php">
             <input type="file" accept=".jpg,.png" id="myFile" name="filename">
             <br>
@@ -38,7 +43,7 @@
         function addThread(thread) {
             var threadHtml = `
             <li class="row">
-                <a href="/thread.html?${thread.id}">
+                <a href="/ohacksio/thread.html?${thread.id}">
                     <h4 class="title">
                         ${thread.title}
                     </h4>
@@ -65,13 +70,14 @@
 
         var btn = document.getElementById("add thread");
         btn.addEventListener('click', function() {
-            var txt = document.querySelector('textarea');
+            var contentval = document.querySelector('contentval');
+            var titleval = document.querySelector('titleval')
             var thread = {
                 id: threads.length + 1,
-                title: "Thread " + JSON.parse(threads.length + 1),
+                title: titleval.value,
                 author: "Aaron",
                 date: Date.now(),
-                content: txt.value,
+                content: contentval.value,
                 comments: [
                 ],
                 img:document.querySelector('form')
