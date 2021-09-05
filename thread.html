@@ -12,13 +12,14 @@
     <div class="top-bar">
         <h1>
             <a href="/ohacksio/forum.html">
-                My Forum
+                ReForum
             </a>
         </h1>
     </div>
     <div class="main">
         <div class="header">
         </div>
+        <p>_________________________________________________________</p>
         <p>Vote: Is this recyclable?</p>
         <input type="button" onclick="vote(1)" value="Yes">
         <input type="button" onclick="vote(0)" value="No">
@@ -28,6 +29,7 @@
         <p>_________________________________________________________</p>
         <p>Leave a comment! Discuss the 5 Rs!</p>
         <input type="text" id="authorval" value="Username...">
+        <br>
         <textarea id="commenttext">Comment...</textarea>
         <button>Add Comment</button>
         <div class="comments">
@@ -117,12 +119,14 @@
                     <div class="grid-container">
                         <div class="item1">
                             <i class="fa fa-arrow-circle-up" onclick="upvote('${comment.id}')" aria-hidden="true"></i>
-                            <br>
-                            <span id=${comment.id}>0</span>
-                            <br>
-                            <i class="fa fa-arrow-circle-down" onclick="downvote('${comment.id}')" aria-hidden="true"></i>
                         </div>
                         <div class="item2">
+                            <span id=${comment.id}>0</span>
+                        </div>
+                        <div class="item3">
+                            <i class="fa fa-arrow-circle-down" onclick="downvote('${comment.id}')" aria-hidden="true"></i>
+                        </div>
+                        <div class="item4">
                             <div class="top-comment">
                                 <p class="user">
                                     ${comment.author}
@@ -132,7 +136,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="item3">
+                        <div class="item5">
                             <div class="comment-content">
                                 ${comment.content}
                             </div>
@@ -156,24 +160,13 @@
                 id: thread.id + '.' + thread.comments.length,
                 content: commenttext.value,
                 date: Date.now(),
-                author: authorval,
+                author: authorval.value,
                 likes: "0"
             }
             addComment(comment);
-            txt.value = '';
             thread.comments.push(comment);
             localStorage.setItem('threads', JSON.stringify(threads));
         })
-        
-        // var upvote = document.querySelectorAll('fa fa-arrow-circle-up');
-        // upvote.addEventListener('click', function() {
-        //     comment.likes = comment.likes + 1;
-        //     document.getElementById('span.' + upvote.id).innerHTML = comment.likes;
-        // })
-        // var downvote = document.querySelectorAll('fa fa-arrow-circle-down');
-        // downvote.addEventListener('click', function() {
-        //     comment.likes = comment.likes - 1;
-        // })
 
     </script>
 </body>

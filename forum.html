@@ -12,7 +12,7 @@
     <div class="top-bar">
         <h1>
             <a href="/ohacksio/forum.html">
-                My Forum
+                ReForum
             </a>
         </h1>
     </div>
@@ -22,11 +22,15 @@
         <div class="header">
         </div>
         <p>_________________________</p>
-        <p>Thread Title</p>
-        <textarea id="titleval"></textarea>
+        <p>Thread Title<b style="color:rgb(253, 0, 13)">*</b></p>
+        <input type="text" id="titleval" value="Title...">
         <br>
-        <p>Content</p>
-        <textarea id="contentval"></textarea>
+        <p>Voting Question<b style="color:rgb(253, 0, 13)">*</b></p>
+        <textarea id="voteval" style="width: 50%; height: 20px;">A yes or no question. E.g. is this recyclable? Is this reusable?</textarea>
+        <br>
+        <p>Content<b style="color:rgb(253, 0, 13)">*</b></p>
+        <textarea id="contentval" style="width: 50%; height: 80px;">Content...</textarea>
+        <p>Upload an Image<b style="color:rgb(253, 0, 13)">*</b></p>
         <form action="/action_page.php">
             <input type="file" accept=".jpg,.png" id="myFile" name="filename">
             <br>

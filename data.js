@@ -1,34 +1,34 @@
 var defaultThreads = [
     {
         id: 1,
-        title: "Thread 1",
+        title: "Can I recycle this light bulb?",
         author: "Aaron",
         date: Date.now(),
-        content: "Thread content",
+        content: "This is the product description: 90-Watt Equivalent PAR38 Halogen Indoor/Outdoor Dimmable Flood Light Bulb. I'm not sure if I can recycle these in my area but I'm zip code 43221.",
         comments: [
             {
                 id:'11',
-                author: "No Waste Gang",
+                author: "Man Oh Man",
                 date: Date.now(),
-                content: "Aw man, that is unfortunately not recyclable. But don't fret! You can still repurpose that.",
+                content: "Aw man, that is unfortunately not recyclable because it's a halogen light bulb. They contain halogen light bulbs and are tough to recycle. In 43221, you can just put it in your trash cart for disposal.",
                 likes: "0"
             },
             {
                 id:'12',
-                author: "Man Oh Man",
+                author: "No Waste Gang",
                 date: Date.now(),
-                content: "I recycle those all the time, but that's only because I am allowed to in my area. Make sure you check information specific to your area or include your zip code in the post next time!",
+                content: "While Man Oh Man is right, you can also repurpose that light bulb into an air plant bulb. Just put an air plant and some water inside, and dangle it from your ceiling with a string. It looks really cool and you get a new home for a plant :).",
                 likes: "0"
             }
         ],
-        img: "plastic-water-bottle.jpg"
+        img: "lightbulb.jpg"
     },
     {
         id: 2,
-        title: "Thread 2",
-        author: "Aaron",
+        title: "Can I recycle this plastic water bottle?",
+        author: "A-A-ron",
         date: Date.now(),
-        content: "Thread content 2",
+        content: "The label came off this water bottle, so I couldn't find a recycle symbol. Otherwise, I would normally consult the info page that talks about the different symbols. Does anyone know if this is still recyclable?",
         comments: [
             {
                 id: '21',
