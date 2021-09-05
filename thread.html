@@ -176,7 +176,11 @@
         function upvote(id) {
             var spanEle = document.getElementById(id);
             spanEle.innerText = parseInt(spanEle.innerText) + 1;
-            if (id != '11' && id != '12' && id != '21' && id != '22') {
+            var com = thread.comments.find(t => t.id == id);
+            com.likes = spanEle.innerText;
+            thread.comments.pop(com);
+            thread.comments.push(com);
+            if (id != '1.1' && id != '1.2' && id != '2.1' && id != '2.2') {
                 localStorage.setItem('pts', parseInt(localStorage.getItem('pts')) + 1);
             }
             console.log(localStorage.getItem('pts'));
@@ -184,7 +188,11 @@
         function downvote(id) {
             var spanEle = document.getElementById(id);
             spanEle.innerText = parseInt(spanEle.innerText) - 1;
-            if (id != '11' && id != '12' && id != '21' && id != '22') {
+            var com = thread.comments.find(t => t.id == id);
+            com.likes = spanEle.innerText;
+            thread.comments.pop(com);
+            thread.comments.push(com);
+            if (id != '1.1' && id != '1.2' && id != '2.1' && id != '2.2') {
                 localStorage.setItem('pts', parseInt(localStorage.getItem('pts')) - 1);
             }
             console.log(localStorage.getItem('pts'));

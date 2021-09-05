@@ -7,14 +7,14 @@ var defaultThreads = [
         content: "This is the product description: 90-Watt Equivalent PAR38 Halogen Indoor/Outdoor Dimmable Flood Light Bulb. I'm not sure if I can recycle these in my area but I'm zip code 43221.",
         comments: [
             {
-                id:'11',
+                id:'1.1',
                 author: "Man Oh Man",
                 date: Date.now(),
                 content: "Aw man, that is unfortunately not recyclable because it's a halogen light bulb. They contain halogen light bulbs and are tough to recycle. In 43221, you can just put it in your trash cart for disposal.",
                 likes: "924"
             },
             {
-                id:'12',
+                id:'1.2',
                 author: "No Waste Gang",
                 date: Date.now(),
                 content: "While Man Oh Man is right, you can also repurpose that light bulb into an air plant bulb. Just put an air plant and some water inside, and dangle it from your ceiling with a string. It looks really cool and you get a new home for a plant :).",
@@ -31,14 +31,14 @@ var defaultThreads = [
         content: "The label came off this water bottle, so I couldn't find a recycle symbol. Otherwise, I would normally consult the info page that talks about the different symbols. Does anyone know if this is still recyclable?",
         comments: [
             {
-                id: '21',
+                id: '2.1',
                 author: "Rick Astley",
                 date: Date.now(),
                 content: "Never gonna give recycling up! Rock on, bud, that is totally recyclable!",
                 likes: "690"
             },
             {
-                id:'22',
+                id:'2.2',
                 author: "Agora5",
                 date: Date.now(),
                 content: "Rick's totally right! And it's reusable too - you can fill that bad boi up and keep on using it!",
