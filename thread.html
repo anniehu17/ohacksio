@@ -176,10 +176,18 @@
         function upvote(id) {
             var spanEle = document.getElementById(id);
             spanEle.innerText = parseInt(spanEle.innerText) + 1;
+            if (id != '11' && id != '12' && id != '21' && id != '22') {
+                localStorage.setItem('pts', parseInt(localStorage.getItem('pts')) + 1);
+            }
+            console.log(localStorage.getItem('pts'));
         }
         function downvote(id) {
             var spanEle = document.getElementById(id);
             spanEle.innerText = parseInt(spanEle.innerText) - 1;
+            if (id != '11' && id != '12' && id != '21' && id != '22') {
+                localStorage.setItem('pts', parseInt(localStorage.getItem('pts')) - 1);
+            }
+            console.log(localStorage.getItem('pts'));
         }
         function addComment(comment) {
             var commentHtml = `
@@ -189,7 +197,7 @@
                             <i class="fa fa-arrow-circle-up" onclick="upvote('${comment.id}')" aria-hidden="true"></i>
                         </div>
                         <div class="item2">
-                            <span id=${comment.id}>0</span>
+                            <span id=${comment.id}>${comment.likes}</span>
                         </div>
                         <div class="item3">
                             <i class="fa fa-arrow-circle-down" onclick="downvote('${comment.id}')" aria-hidden="true"></i>
@@ -228,7 +236,8 @@
                 if (document.getElementById('signupuname').value) {
                     authorval = document.getElementById('signupuname').value;
                     localStorage.setItem("author", authorval);
-                } else if (document.getElementById('loginuname').value) {
+                }
+                if (document.getElementById('loginuname').value) {
                     authorval = document.getElementById('loginuname').value;
                     localStorage.setItem("author", authorval);
                 }
