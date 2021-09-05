@@ -7,14 +7,18 @@ var defaultThreads = [
         content: "Thread content",
         comments: [
             {
-                author: "Jack",
+                id:'11',
+                author: "No Waste Gang",
                 date: Date.now(),
-                content: "Hey there"
+                content: "Aw man, that is unfortunately not recyclable. But don't fret! You can still repurpose that.",
+                likes: "0"
             },
             {
-                author: "Arthur",
+                id:'12',
+                author: "Man Oh Man",
                 date: Date.now(),
-                content: "Hey to you too"
+                content: "I recycle those all the time, but that's only because I am allowed to in my area. Make sure you check information specific to your area or include your zip code in the post next time!",
+                likes: "0"
             }
         ],
         img: "plastic-water-bottle.jpg"
@@ -27,14 +31,18 @@ var defaultThreads = [
         content: "Thread content 2",
         comments: [
             {
-                author: "Jack",
+                id: '21',
+                author: "Rick Astley",
                 date: Date.now(),
-                content: "Hey there"
+                content: "Never gonna give recycling up! Rock on, bud, that is totally recyclable!",
+                likes: "0"
             },
             {
-                author: "Arthur",
+                id:'22',
+                author: "Agora5",
                 date: Date.now(),
-                content: "Hey to you too"
+                content: "Rick's totally right! And it's reusable too - you can fill that bad boi up and keep on using it!",
+                likes: "0"
             }
         ],
         img: "plastic-water-bottle.jpg"

@@ -19,15 +19,71 @@
     <div class="main">
         <div class="header">
         </div>
-        <textarea></textarea>
-        <button>add comment</button>
+        <p>Vote: Is this recyclable?</p>
+        <input type="button" onclick="vote(1)" value="Yes">
+        <input type="button" onclick="vote(0)" value="No">
+        <br>
+        <p>Results:</p>
+        <span id="vote"></span>
+        <p>_________________________________________________________</p>
+        <p>Leave a comment! Discuss the 5 Rs!</p>
+        <input type="text" id="authorval" value="Username...">
+        <textarea id="commenttext">Comment...</textarea>
+        <button>Add Comment</button>
         <div class="comments">
         </div>
     </div>
     <script src="data.js"></script>
     <script>
+        function vote(vote) {
+            var voting;
+            if (localStorage.getItem("votes")) {
+                var votes = localStorage.getItem("votes");
+                votes = parseInt(votes) + 1;
+                var yes = localStorage.getItem("yes");
+                var no = localStorage.getItem("no");
+
+                if (vote) {
+                    yes = parseInt(yes) + 1;
+                } else {
+                    no = parseInt(no) + 1;
+                }
+
+                var yesper = yes / votes * 100;
+                var noper = no / votes * 100;
+                console.log(yes);
+                console.log(no);
+                console.log(votes);
+                console.log(yesper);
+                console.log(noper);
+                voting = yesper;
+                voting = voting + "% say yes, ";
+                voting = voting + parseInt(noper);
+                voting = voting + "% say no.";
+
+                localStorage.setItem("votes", votes);
+                localStorage.setItem("yes", yes);
+                localStorage.setItem("no", no);
+            } else {
+                localStorage.setItem("votes", 1);
+                if (vote) {
+                    localStorage.setItem("yes", 1);
+                    localStorage.setItem("no", 0);
+                    voting = "100% say yes, 0% say no."
+                } else {
+                    localStorage.setItem("no", 1);
+                    localStorage.setItem("yes", 0);
+                    voting = "100% say yes, 0% say no."
+                }
+                
+            }
+            document.getElementById('vote').innerHTML = voting;
+        }
+
         var id = window.location.search.slice(1);
         var thread = threads.find(t => t.id == id);
+        console.log(thread);
+        console.log(threads);
         var header = document.querySelector('.header');
         var headerHtml = `
             <h4 class="title">
@@ -47,15 +103,24 @@
             </div>
         `
         header.insertAdjacentHTML('beforeend', headerHtml)
-
+        function upvote(id) {
+            var spanEle = document.getElementById(id);
+            spanEle.innerText = parseInt(spanEle.innerText) + 1;
+        }
+        function downvote(id) {
+            var spanEle = document.getElementById(id);
+            spanEle.innerText = parseInt(spanEle.innerText) - 1;
+        }
         function addComment(comment) {
             var commentHtml = `
                 <div class="comment">
                     <div class="grid-container">
                         <div class="item1">
-                            <i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
+                            <i class="fa fa-arrow-circle-up" onclick="upvote('${comment.id}')" aria-hidden="true"></i>
                             <br>
-                            <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+                            <span id=${comment.id}>0</span>
+                            <br>
+                            <i class="fa fa-arrow-circle-down" onclick="downvote('${comment.id}')" aria-hidden="true"></i>
                         </div>
                         <div class="item2">
                             <div class="top-comment">
@@ -66,6 +131,8 @@
                                     ${new Date(comment.date).toLocaleString()}
                                 </p>
                             </div>
+                        </div>
+                        <div class="item3">
                             <div class="comment-content">
                                 ${comment.content}
                             </div>
@@ -83,17 +150,31 @@
 
         var btn = document.querySelector('button');
         btn.addEventListener('click', function() {
-            var txt = document.querySelector('textarea');
+            var authorval = document.getElementById('authorval');
+            var commenttext = document.getElementById('commenttext');
             var comment = {
-                content: txt.value,
+                id: thread.id + '.' + thread.comments.length,
+                content: commenttext.value,
                 date: Date.now(),
-                author: 'Aaron'
+                author: authorval,
+                likes: "0"
             }
             addComment(comment);
             txt.value = '';
             thread.comments.push(comment);
             localStorage.setItem('threads', JSON.stringify(threads));
         })
+        
+        // var upvote = document.querySelectorAll('fa fa-arrow-circle-up');
+        // upvote.addEventListener('click', function() {
+        //     comment.likes = comment.likes + 1;
+        //     document.getElementById('span.' + upvote.id).innerHTML = comment.likes;
+        // })
+        // var downvote = document.querySelectorAll('fa fa-arrow-circle-down');
+        // downvote.addEventListener('click', function() {
+        //     comment.likes = comment.likes - 1;
+        // })
+
     </script>
 </body>
 
