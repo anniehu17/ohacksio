@@ -472,3 +472,37 @@ html, body {
     overflow: hidden;
   }
   
+
+.e34_147 { 
+  background: url('recycle.png');
+  background-color:rgba(11.68750025331974, 11.103124860674143, 11.103124860674143, 0.6000000238418579);
+	width:1152px;
+	height:416px;
+	position:absolute;
+	left:0px;
+	top:60px;
+}
+.e58_2 { 
+	color:rgba(255, 255, 255, 1);
+	width:752px;
+	height:90px;
+	position:absolute;
+	left:200px;
+	top:298px;
+	font-family:Roboto Mono;
+	text-align:center;
+	font-size:50px;
+	letter-spacing:0;
+}
+.e34_148 { 
+	color: rgba(255, 255, 255, 1);
+  width: 484px;
+  height: 136px;
+  position: absolute;
+  left: 337px;
+  top: 162px;
+  font-family: Roboto Mono;
+  text-align: center;
+  font-size: 100px;
+  letter-spacing: 0;
+}
