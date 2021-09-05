@@ -261,7 +261,7 @@
             }
             var commenttext = document.getElementById('commenttext');
             var comment = {
-                id: thread.id + '.' + thread.comments.length,
+                id: thread.id + '.' + (parseInt(thread.comments.length) + 1),
                 content: commenttext.value,
                 date: Date.now(),
                 author: authorval,
