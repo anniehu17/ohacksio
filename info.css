@@ -10,6 +10,81 @@ html, body {
   body {
     font-size: 14px;
   }
+  .ei79_31_34_132 { 
+	background-color:rgba(255, 255, 255, 1);
+	width:68px;
+	height:60px;
+	position:absolute;
+	left:3px;
+	top:0px;
+}
+.e34_130 { 
+	width:58px;
+	height:60px;
+	position:absolute;
+	left:10px;
+	top:10px;
+	background-image:url("logo.png");
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.ei79_31_34_133 { 
+	color:rgba(9.56250037997961, 9.442969243973494, 9.442969243973494, 1);
+	width:74px;
+	height:26px;
+	position:absolute;
+	left:945px;
+	top:15px;
+	font-family:Roboto Mono;
+	text-align:center;
+	font-size:20px;
+	letter-spacing:0;
+}
+.ei79_32_34_136 { 
+	background-color:rgba(255, 255, 255, 1);
+	opacity:0.800000011920929;
+	width:68px;
+	height:60px;
+	position:absolute;
+	left:3px;
+	top:0px;
+}
+.ei79_32_34_137 { 
+	color:rgba(17.00000088661909, 16.575001291930676, 16.575001291930676, 1);
+	width:74px;
+	height:26px;
+	position:absolute;
+	left:1020px;
+	top:15px;
+	font-family:Roboto Mono;
+	text-align:center;
+	font-size:20px;
+	letter-spacing:0;
+}
+.ei79_34_34_143 { 
+	color:rgba(17.00000088661909, 16.575001291930676, 16.575001291930676, 1);
+	width:134px;
+	height:23px;
+	position:absolute;
+	left:1210px;
+	top:15px;
+	font-family:Roboto Mono;
+	text-align:center;
+	font-size:20px;
+	letter-spacing:0;
+}
+.ei79_33_34_140 { 
+	color:rgba(17.00000088661909, 16.575001291930676, 16.575001291930676, 1);
+	width:108px;
+	height:23px;
+	position:absolute;
+	left:1100px;
+	top:15px;
+	font-family:Roboto Mono;
+	text-align:center;
+	font-size:20px;
+	letter-spacing:0;
+}
 
   .v2_2 {
     width: 100%;
@@ -23,7 +98,7 @@ html, body {
   }
   .v63_100 {
     width: 100%;
-    height: 100%;
+    height: 2750px;
     background: rgba(232,223,224,1);
     opacity: 1;
     position: absolute;
@@ -45,42 +120,42 @@ html, body {
     overflow: hidden;
   }
   .v87_71 {
-    width: 269px;
-    height: 273px;
+    width: 875px;
+    height: 775px;
     background: url("5.PNG");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     opacity: 1;
     position: absolute;
-    top: 1937px;
-    left: 17px;
+    top: 1700px;
+    left: -315px;
     overflow: hidden;
   }
   .v75_114 {
-    width: 254px;
-    height: 232px;
+    width: 875px;
+    height: 775px;
     background: url("3.PNG");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     opacity: 1;
     position: absolute;
-    top: 1284px;
-    left: 5px;
+    top: 1075px;
+    left: -315px;
     overflow: hidden;
   }
   .v73_113 {
-    width: 233px;
-    height: 232px;
+    width: 875px;
+    height: 775px;
     background: url("2.PNG");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     opacity: 1;
     position: absolute;
-    top: 982px;
-    left: 2px;
+    top: 725px;
+    left: -315px;
     overflow: hidden;
   }
   .v67_109 {
@@ -148,7 +223,7 @@ html, body {
     color: rgba(113,76,160,1);
     position: absolute;
     top: 2830px;
-    left: 239px;
+    left: 230px;
     font-family: Roboto Mono;
     font-weight: Bold;
     font-size: 30px;
@@ -232,7 +307,7 @@ html, body {
     color: rgba(147,73,73,1);
     position: absolute;
     top: 781px;
-    left: 514px;
+    left: 440px;
     font-family: Roboto Mono;
     font-weight: Regular;
     font-size: 30px;
@@ -244,7 +319,7 @@ html, body {
     color: rgba(26,76,122,1);
     position: absolute;
     top: 2067px;
-    left: 519px;
+    left: 450px;
     font-family: Roboto Mono;
     font-weight: Regular;
     font-size: 30px;
@@ -256,7 +331,7 @@ html, body {
     color: rgba(231,142,61,1);
     position: absolute;
     top: 1078px;
-    left: 506px;
+    left: 440px;
     font-family: Roboto Mono;
     font-weight: Regular;
     font-size: 30px;
@@ -268,7 +343,7 @@ html, body {
     color: rgba(77,134,117,1);
     position: absolute;
     top: 2432px;
-    left: 531px;
+    left: 455px;
     font-family: Roboto Mono;
     font-weight: Regular;
     font-size: 30px;
@@ -280,7 +355,7 @@ html, body {
     color: rgba(113,76,160,1);
     position: absolute;
     top: 2830px;
-    left: 517px;
+    left: 445px;
     font-family: Roboto Mono;
     font-weight: Regular;
     font-size: 30px;
@@ -292,7 +367,7 @@ html, body {
     color: rgba(183,171,63,1);
     position: absolute;
     top: 1425px;
-    left: 506px;
+    left: 440px;
     font-family: Roboto Mono;
     font-weight: Regular;
     font-size: 30px;
@@ -304,7 +379,7 @@ html, body {
     color: rgba(87,141,61,1);
     position: absolute;
     top: 1692px;
-    left: 517px;
+    left: 440px;
     font-family: Roboto Mono;
     font-weight: Regular;
     font-size: 30px;
@@ -316,7 +391,7 @@ html, body {
     color: rgba(147,73,73,1);
     position: absolute;
     top: 739px;
-    left: 404px;
+    left: 365px;
     font-family: Roboto Mono;
     font-weight: Regular;
     font-size: 30px;
@@ -328,7 +403,7 @@ html, body {
     color: rgba(183,171,63,1);
     position: absolute;
     top: 1345px;
-    left: 404px;
+    left: 365px;
     font-family: Roboto Mono;
     font-weight: Regular;
     font-size: 30px;
@@ -340,7 +415,7 @@ html, body {
     color: rgba(87,141,61,1);
     position: absolute;
     top: 1642px;
-    left: 402px;
+    left: 365px;
     font-family: Roboto Mono;
     font-weight: Regular;
     font-size: 30px;
@@ -351,8 +426,8 @@ html, body {
     width: 730px;
     color: rgba(113,76,160,1);
     position: absolute;
-    top: 2750px;
-    left: 404px;
+    top: 2749px;
+    left: 365px;
     font-family: Roboto Mono;
     font-weight: Regular;
     font-size: 30px;
@@ -364,7 +439,7 @@ html, body {
     color: rgba(231,142,61,1);
     position: absolute;
     top: 1028px;
-    left: 398px;
+    left: 365px;
     font-family: Roboto Mono;
     font-weight: Regular;
     font-size: 30px;
@@ -375,8 +450,8 @@ html, body {
     width: 730px;
     color: rgba(77,134,117,1);
     position: absolute;
-    top: 2346px;
-    left: 417px;
+    top: 2347px;
+    left: 382px;
     font-family: Roboto Mono;
     font-weight: Regular;
     font-size: 30px;
@@ -388,7 +463,7 @@ html, body {
     color: rgba(26,76,122,1);
     position: absolute;
     top: 1986px;
-    left: 415px;
+    left: 375px;
     font-family: Roboto Mono;
     font-weight: Regular;
     font-size: 30px;
@@ -433,51 +508,72 @@ html, body {
     text-align: left;
   }
   .v71_111 {
-    width: 233px;
-    height: 232px;
+    width: 875px;
+    height: 775px;
     background: url("1.PNG");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     opacity: 1;
     position: absolute;
-    top: 683px;
-    left: 2px;
+    top: 425px;
+    left: -315px;
     overflow: hidden;
   }
   .v87_70 {
-    width: 267px;
-    height: 280px;
+    width: 875px;
+    height: 775px;
     background: url("4.PNG");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     opacity: 1;
     position: absolute;
-    top: 1614px;
-    left: 15px;
+    top: 1350px;
+    left: -315px;
     overflow: hidden;
   }
   .v87_73 {
-    width: 272px;
-    height: 252px;
+    width: 950px;
+    height: 850px;
     background: url("7.PNG");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     opacity: 1;
     position: absolute;
-    top: 2713px;
-    left: 2px;
+    top: 2425px;
+    left: -350px;
     overflow: hidden;
   }
-  
+  .e34_134 { 
+	width:100%;
+	height:750px;
+	position:absolute;
+	left:0px;
+	top:60px;
+	background-image:url("recycle.png");
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.e34_146 { 
+	color:rgba(17.00000088661909, 16.575001291930676, 16.575001291930676, 1);
+	width:86px;
+	height:23px;
+	position:absolute;
+	left:1350px;
+	top:15px;
+	font-family:Roboto Mono;
+	text-align:center;
+	font-size:20px;
+	letter-spacing:0;
+}
 
 .e34_147 { 
-  background: url('recycle.png');
   background-color:rgba(11.68750025331974, 11.103124860674143, 11.103124860674143, 0.6000000238418579);
-	width:1152px;
-	height:416px;
+  background-size: cover;
+	width:100%;
+	height:750px;
 	position:absolute;
 	left:0px;
 	top:60px;
@@ -496,10 +592,10 @@ html, body {
 }
 .e34_148 { 
 	color: rgba(255, 255, 255, 1);
-  width: 484px;
+  width: 1000px;
   height: 136px;
   position: absolute;
-  left: 337px;
+  left: 200px;
   top: 162px;
   font-family: Roboto Mono;
   text-align: center;

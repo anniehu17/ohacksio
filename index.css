@@ -26,23 +26,23 @@ a:active {
 .e34_129 { 
 	background-color:rgba(255, 255, 255, 1);
     overflow:hidden;
-	width:1152px;
+	width:100%;
 	height:3226px;
 	position:absolute;
 }
 .e34_130 { 
-	width:58px;
+	width:65px;
 	height:60px;
 	position:absolute;
-	left:0px;
+	left:-5px;
 	top:0px;
 	background-image:url("logo.png");
 	background-repeat:no-repeat;
 	background-size:cover;
 }
 .e34_134 { 
-	width:1152px;
-	height:416px;
+	width:100%;
+	height:750px;
 	position:absolute;
 	left:0px;
 	top:60px;
@@ -198,7 +198,7 @@ a:active {
 }
 .e34_147 { 
 	background-color:rgba(11.68750025331974, 11.103124860674143, 11.103124860674143, 0.6000000238418579);
-	width:1152px;
+	width:100%;
 	height:416px;
 	position:absolute;
 	left:0px;
@@ -237,7 +237,7 @@ a:active {
 }
 .e34_150 { 
 	background-color:rgba(232.00000137090683, 223.00000190734863, 224.000001847744, 1);
-	width:509px;
+	width:800px;
 	height:269px;
 	position:absolute;
 	left:0px;
@@ -339,7 +339,7 @@ a:active {
 }
 .e34_154 { 
 	background-color:rgba(141.0000067949295, 155.00000596046448, 106.00000128149986, 1);
-	width:644px;
+	width:950px;
 	height:292px;
 	position:absolute;
 	left:0px;
@@ -388,7 +388,7 @@ a:active {
 }
 .e83_84 { 
 	background-color:rgba(141.0000067949295, 155.00000596046448, 106.00000128149986, 1);
-	width:644px;
+	width:1000px;
 	height:317px;
 	position:absolute;
 	left:0px;
@@ -427,11 +427,11 @@ a:active {
 }
 .e83_94 { 
 	background-color:rgba(141.0000067949295, 155.00000596046448, 106.00000128149986, 1);
-	width:644px;
-	height:471px;
+	width:1000px;
+	height:500px;
 	position:absolute;
 	left:0px;
-	top:0px;
+	top:-10px;
 }
 .e83_95 { 
 	color:rgba(255, 255, 255, 1);
@@ -461,7 +461,7 @@ a:active {
 	width:650px;
 	height:268px;
 	position:absolute;
-	left:502px;
+	left:800px;
 	top:476px;
 	background-image:url("recycling2.jpg");
 	background-repeat:no-repeat;
@@ -476,7 +476,7 @@ a:active {
 }
 .e83_89 { 
 	background-color:rgba(232.00000137090683, 223.00000190734863, 224.000001847744, 1);
-	width:644px;
+	width:1000px;
 	height:465px;
 	position:absolute;
 	left:0px;
@@ -515,7 +515,7 @@ a:active {
 }
 .e83_99 { 
 	background-color:rgba(232.00000137090683, 223.00000190734863, 224.000001847744, 1);
-	width:644px;
+	width:1000px;
 	height:616px;
 	position:absolute;
 	left:0px;
@@ -569,9 +569,9 @@ a:active {
 	width:515px;
 	height:465px;
 	position:absolute;
-	left:640px;
+	left:930px;
 	top:1673px;
-	background-image:url("recycling5.jpg");
+	background-image:url("recycling52.jpg");
 	background-repeat:no-repeat;
 	background-size:cover;
 }
@@ -579,7 +579,7 @@ a:active {
 	width:514px;
 	height:617px;
 	position:absolute;
-	left:641px;
+	left:920px;
 	top:2609px;
 	background-image:url("recycling6.jpg");
 	background-repeat:no-repeat;
@@ -589,7 +589,7 @@ a:active {
 	width:515px;
 	height:471px;
 	position:absolute;
-	left:-4px;
+	left:1000;
 	top:2138px;
 	background-image:url("recycling9.jpg");
 	background-repeat:no-repeat;
