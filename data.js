@@ -10,7 +10,7 @@ var defaultThreads = [
                 id:'1.1',
                 author: "Man Oh Man",
                 date: Date.now(),
-                content: "Aw man, that is unfortunately not recyclable because it's a halogen light bulb. They contain halogen light bulbs and are tough to recycle. In 43221, you can just put it in your trash cart for disposal.",
+                content: "Aw man, that is unfortunately not recyclable because it's a halogen light bulb. They contain halogen gas and are tough to recycle. In 43221, you can just put it in your trash cart for disposal.",
                 likes: "924"
             },
             {
