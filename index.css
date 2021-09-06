@@ -206,10 +206,10 @@ a:active {
 }
 .e58_2 { 
 	color:rgba(255, 255, 255, 1);
-	width:752px;
+	width:100%;
 	height:90px;
 	position:absolute;
-	left:200px;
+	left:0;
 	top:298px;
 	font-family:Roboto Mono;
 	text-align:center;
@@ -218,10 +218,10 @@ a:active {
 }
 .e34_148 { 
 	color:rgba(255, 255, 255, 1);
-	width:484px;
+	width:100%;
 	height:136px;
 	position:absolute;
-	left:337px;
+	left:0;
 	top:162px;
 	font-family:Roboto Mono;
 	text-align:center;
@@ -419,10 +419,10 @@ a:active {
 	letter-spacing:0;
 }
 .e83_93 { 
-	width:644px;
+	width:40%;
 	height:471px;
 	position:absolute;
-	left:511px;
+	right:0;
 	top:2138px;
 }
 .e83_94 { 
@@ -468,7 +468,7 @@ a:active {
 	background-size:cover;
 }
 .e83_88 { 
-	width:644px;
+	width:40%;
 	height:269px;
 	position:absolute;
 	left:-4px;
@@ -507,7 +507,7 @@ a:active {
 	letter-spacing:0;
 }
 .e83_98 { 
-	width:644px;
+	width:50%;
 	height:269px;
 	position:absolute;
 	left:-4px;
@@ -515,7 +515,7 @@ a:active {
 }
 .e83_99 { 
 	background-color:rgba(232.00000137090683, 223.00000190734863, 224.000001847744, 1);
-	width:1000px;
+	width:100%;
 	height:616px;
 	position:absolute;
 	left:0px;
@@ -535,10 +535,10 @@ a:active {
 }
 .e83_101 { 
 	color:rgba(255, 255, 255, 1);
-	width:553px;
+	width:75%;
 	height:375px;
 	position:absolute;
-	left:65px;
+	left:10%;
 	top:114px;
 	font-family:Roboto Mono;
 	text-align:center;
@@ -566,27 +566,27 @@ a:active {
 	background-size:cover;
 }
 .e94_91 { 
-	width:515px;
+	width:50%;
 	height:465px;
 	position:absolute;
-	left:930px;
+	right:0;
 	top:1673px;
-	background-image:url("recycling52.jpg");
+	background-image:url("recycling5.jpg");
 	background-repeat:no-repeat;
 	background-size:cover;
 }
 .e94_93 { 
-	width:514px;
+	width: 50%;
 	height:617px;
 	position:absolute;
-	left:920px;
+	right:0;
 	top:2609px;
 	background-image:url("recycling6.jpg");
 	background-repeat:no-repeat;
 	background-size:cover;
 }
 .e94_94 { 
-	width:515px;
+	width:60%;
 	height:471px;
 	position:absolute;
 	left:1000;
