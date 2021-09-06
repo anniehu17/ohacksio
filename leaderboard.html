@@ -1,25 +1,22 @@
-<!DOCTYPE html>
-<title>ReForum</title>
-<html>
-  
-<head>
-    <link rel="icon"> <!--ADD href to pic later-->
-    <script src="https://kit.fontawesome.com/37190c7dec.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="leaderboard.css" />
-</head>
-
-<body>
-    <!DOCTYPE html>
+  <!DOCTYPE html>
     <title>ReForum</title>
     <html>
       
     <head>
         <link rel="icon"> <!--ADD href to pic later-->
         <script src="https://kit.fontawesome.com/37190c7dec.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
         <link rel="stylesheet" type="text/css" href="leaderboard.css" />
     </head>
     
     <body>
+      <script>
+        $("document").ready(function() {
+        var rep = localStorage.getItem('pts');
+        document.getElementById('repforrealdude').innerHTML = rep;
+        document.getElementById('realdudename').innerHTML = '@' + localStorage.getItem('author');
+        });
+      </script>
         <div class=e51_3>
             <div class="e63_38"></div>
             <div class="e63_42"></div>
@@ -51,7 +48,7 @@
               <div class="ei89_228_79_180"></div><span  class="ei89_228_79_316">4</span><span  class="ei89_228_79_317">@Agora5</span><span  class="ei89_228_79_318">420</span>
             </div>
             <div class=e89_243>
-              <div class="ei89_243_79_180"></div><span  class="ei89_243_79_316">5</span><span  class="ei89_243_79_317">@Anonymous Guest</span><span  class="ei89_243_79_318">924</span>
+              <div class="ei89_243_79_180"></div><span  class="ei89_243_79_316">5</span><span  class="ei89_243_79_317" id="realdudename">@Anonymous Guest</span><span  class="ei89_243_79_318" id="repforrealdude">0</span>
             </div>
             <div class=e89_233>
               <div class="ei89_233_79_180"></div><span  class="ei89_233_79_316">3</span><span  class="ei89_233_79_317">@Rick Astley</span><span  class="ei89_233_79_318">690</span>
@@ -60,7 +57,9 @@
               <div class="ei89_238_79_180"></div><span  class="ei89_238_79_316">2</span><span  class="ei89_238_79_317">@No Waste Gang</span><span  class="ei89_238_79_318">877</span>
             </div>
           </div>
-    
-</body>
 
+          <script src="data.js"></script>
+          <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+</body>
 </html>
